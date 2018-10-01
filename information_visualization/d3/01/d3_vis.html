@@ -59,9 +59,9 @@
                .text(function(d) {
                     return d[0];
                })
-               .attr("text-anchor", "middle")
+               .attr("text-anchor", "start")
                .attr("x", function(d, i) {
-                    return i * (w / dataset.length) + 5;
+                    return i * (w / dataset.length);
                })
                .attr("y", function(d) {
                     return h - (d[0] * 4) - 2;
